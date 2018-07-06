@@ -1,0 +1,885 @@
+/*=========================================top+nav===================================   */
+
+.top-bar{
+    margin: 20px auto 20px;
+}
+.top-bar .container{
+    
+}
+.top-bar .ui-logo{
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 12px;
+}
+.top-bar .ui-reason{
+    float: left;
+    margin-left: 90px;
+    overflow: hidden;
+    margin-top: 7px;
+}
+.ui-reason a{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 15px;
+}
+.ui-reason a div{
+    background: url(../img/nav1.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.ui-reason a p{
+    color: #707070;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.ui-reason a .zheng{
+    background-position: -100px -40px;
+}
+.ui-reason a .jian{
+    background-position: -232px -40px;
+}
+.ui-reason a .qi{
+    background-position: -364px -40px;
+}
+.ui-input{
+    width: 400px;
+    margin-top: 10px;
+}
+.ui-search{
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    background-color: #ff5c00;
+    border: 2px solid #ff5c00;
+}
+.ui-search input{
+    display: block;
+    background-color: #FFF;
+    outline: none;
+    border: none;
+    box-sizing: content-box;
+    color: #000;
+    position: relative;
+    z-index: 2;
+    width: 88%;
+    font-weight: 900;
+    margin: 0;
+    padding: 5px 3px 5px 5px;
+    height: 25px;
+    line-height: 25px;
+}
+.ui-search button{
+    width: 12%;
+    display: block;
+    height: 36px;
+    background-color: #ff5c00;
+    color: #FFF;
+    line-height: 36px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    letter-spacing: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+}
+.ui-search button i{
+    margin-left: 10px;
+}
+.hot-query{
+    height: 14px;
+    padding-top: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.hot-query li{
+    display: inline-block;
+    line-height: 1.2;
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.hot-query li a{
+    color: #999;
+}
+.hot-query li.highlight a{
+    color: #ff5c00;
+}
+.ui-nav{
+    margin-top: 25px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    position: relative;
+    height: 35px;
+}
+.ui-nav .all-shops{
+    position: relative;
+    font-weight: bold;
+    height: 34px;
+    width: 140px;
+    text-indent: 17px;
+    font-size: 14px;
+    color: #ff5c00;
+    line-height: 35px;
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+.ui-nav .all-shops i{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: url(../img/allImg.fw.png) no-repeat;
+    background-position: -20px 0px;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: 111px;
+}
+.ui-nav .ui-category{
+    display: none;
+    background: #fff;
+    width: 140px;
+    position: absolute;
+    top: 35px;
+    z-index: 3;
+    font-size: 12px;
+}
+.ui-nav .ui-category .ui-category-list{
+    height: 39px;
+    text-align: center;
+}
+.ui-nav .ui-category .ui-category-list .ui-category-second{
+    position: relative;
+    display: block;
+    text-align: left;
+    text-indent: 40px;
+    height: 37px;
+    border: 1px solid #fff;
+    line-height: 37px;
+    background-color: #fff;
+    width: 139px;
+    color: #666;
+}
+.ui-category-third{
+    /*display: none;*/
+    display:none;
+    overflow: hidden;
+    width: 948px;
+    min-height: 349px;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    background: #fff;
+    border: 1px solid #ff5c00;
+}
+.ui-category-list .ui-cate-left{
+    float: left;
+    width: 735px;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box{
+    padding: 9px 30px;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl{
+    text-align: left;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dt{
+    padding: 3px 0 3px 0;
+    border-bottom: 1px dotted #e4e4e4;
+    font-weight: bold;
+    color: #484848;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dd{
+    padding: 5px 0;
+    color: #DADADA;
+    line-height: 20px;
+    word-break: break-word;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dd a{
+    margin: 0 5px 0 0;
+    color: #888;
+    white-space: nowrap;
+}
+.ui-nav .ui-category ul{
+    box-shadow: 2px 2px 2px #ccc;
+}
+.ui-nav .ui-nav-list{
+    margin-left: 10px;
+    float: left;
+}
+.ui-nav .ui-nav-list li{
+    float: left;
+    padding: 0 20px;
+    line-height: 35px;
+    position: relative;
+}
+.ui-nav .ui-nav-list .haiT-nav{
+    padding: 0px 20px;
+    display: block;
+    position: relative;
+    margin: 0 1px;
+}
+.ui-nav .ui-nav-list li a{
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    display: block;
+}
+.ui-nav .ui-nav-list li a{
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    display: block;
+}
+.ui-nav .ui-nav-list li.now a{
+    color: #ff5c00;
+}
+.ui-nav-line{
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: 34px;
+    z-index: 2;
+    margin-top: 1px;
+    background: url(../img/nav3.png) repeat-x;
+}
+
+
+/*=====================================fixLeftAd==========================*/
+.fixLeftImg{
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 99;
+    opacity:0;
+}
+.fixLeftImg .fixLeftTop{
+    background: url(../img/allImg.fw.png) 0 -103px no-repeat;
+    width: 125px;
+    height: 230px;
+    position: relative;
+}
+.fixLeftImg .fixLeftTop a{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 13px;
+}
+.fixLeftImg .fixLeftTop .area-hotProductCon{
+    top: 50px;
+}
+.fixLeftImg .fixLeftTop .area-specialProductCon{
+    top: 86px;
+}
+.fixLeftImg .fixLeftAd{
+    margin-left: 3px;
+}
+.fixLeftImg .fixLeftAd .fixLeftAd_close{
+    position: absolute;
+    left: 100px;
+    border: 1px solid #808080;
+    background-color: #fff;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 14px;
+}
+.fixLeftImg .fixLeftAd img{
+    width: 106px;
+}
+.ui-nav-bar .ui-category .ui-cate-icon {
+    vertical-align: middle;
+    background: url(../images/newIndex/top_bar2.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+}
+.ui-nav-bar .ui-category .ui-cate-icon1 {
+    background-position: -114px 0px;
+    height: 16px;
+    width: 12px;
+    top: 12px;
+}
+.ui-nav-bar .ui-category .ui-cate-arr {
+    display: inline-block;
+    background: url(../images/newIndex/xinmayup.png) no-repeat;
+    background-position: -117px -84px;
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/*=========================================slidebar================================*/
+.sildebar{
+    position: fixed;
+    _position: absolute;
+    overflow: visible;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 36px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    box-shadow: -3px 0 17px rgba(0,0,0,0.15);
+}
+.level-1, .level-2, .level-3, .level-4 {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.level-1 {
+    height: auto;
+    top: 38%;
+    margin-top: -200px;
+    z-index: 1001;
+}
+.level-dl {
+    position: relative;
+    margin-bottom: 30px;
+}
+.level-dt {
+    position: relative;
+    width: 36px;
+    text-align: center;
+}
+.level-dt a {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: block;
+}
+.level-dt s.level-icon1 {
+    background-position: 0 0;
+}
+.level-dt s {
+    display: inline-block;
+    background-image: url(http://static.boodoll.cn/mall/v16//images/index/righticon.png);
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    zoom: 1;
+    width: 22px;
+    height: 22px;
+    top: 7px;
+}
+.level-login-dd {
+    width: 293px;
+    background-position-y: 0px;
+}
+.level-dd{
+    position: absolute;
+    right: 55px;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    background: url(http://static.boodoll.cn/mall/v16//images/index/whitearr.png) no-repeat right center;
+    display: none;
+    box-shadow: -7px 1px 10px rgba(31, 31, 31, 0.21);
+}
+.level-login-dd .level-dd-div {
+    width: 288px;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 12px;
+    font-size: 12px;
+    /*display: none;*/
+}
+.level-close {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    overflow: hidden;
+    zoom: 1;
+    background: url(http://static.boodoll.cn/mall/v16//images/index/rbclose.jpg) no-repeat;
+}
+.user-wel {
+    color: #525261;
+    height: 42px;
+    line-height: 42px;
+    font-family: SimSun;
+}
+.user-wel a {
+    color: #ff5c00;
+}
+.user-img{
+    padding-top: 10px;
+}
+.level-2{
+    height: auto;
+    top: 11%;
+    margin-top: 100px;
+    z-index: 1002;
+}
+.level-2 .level-dt a {
+    height: auto;
+    margin: 0 auto;
+}
+.topline{
+    width: 22px;
+    border-top: 1px solid #eae5e1;
+    display: block;
+    zoom: 1;
+    margin-bottom: 7px;
+    margin: 0 auto;
+}
+.level-2 .level-dt a em {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #ff5c00;
+    font-size: 12px;
+}
+.level-2 .level-dt a span {
+    display: inline-block;
+    width: 22px;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.level-dt s.level-icon2 {
+    background-position: 0 -25px;
+}
+.cart-slidebar {
+    width: 293px;
+    position: fixed;
+    _position: absolute;
+    overflow: visible;
+    top: 0;
+    right: 55px;
+    z-index: 1010;
+    height: 100%;
+    background: url(http://static.boodoll.cn/mall/v16//images/index/whitearr.png) no-repeat right 260px;
+     display: none; 
+}
+.cart-level-dd {
+    width: 288px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -7px 1px 10px rgba(31, 31, 31, 0.21);
+}
+.cart-level-t {
+    width: 264px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+}
+.cart-level-t h2 {
+    font-size: 16px;
+    color: #333;
+    float: left;
+}
+.cart-level-t .level-close {
+    top: 15px;
+    right: 0;
+}
+.level-close {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    overflow: hidden;
+    zoom: 1;
+    background: url(http://static.boodoll.cn/mall/v16//images/index/rbclose.jpg) no-repeat;
+}
+.cart-level-line {
+    border-bottom: 1px solid #eee;
+    width: 264px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.slideBarCart-box {
+    width: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.cart-level-c p {
+    font-size:12px;
+    margin-bottom: 15px;
+    color: #444;
+}
+.cart-level-line {
+    border-bottom: 1px solid #eee;
+    width: 264px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.cart-level-t {
+    width: 264px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+}
+.level-3 {
+    height: auto;
+    top: 38%;
+    margin-top: 50px;
+    z-index: 1002;
+    padding-top: 20%;
+}
+.level-dt s.level-icon3 {
+    background-position: 0 -50px;
+}
+.level-dt s.level-icon4 {
+    background-position: 0 -75px;
+}
+.level-cur .level-dt a {
+    background-color: #ff5c00;
+    color: #fff;
+    margin-left: -1px;
+    width: 37px;
+    height: auto;
+}
+.level-cur .level-dd{
+
+}
+.level-dt s.level-icon5 {
+    background-position: -22px -100px;
+    height: 25px;
+    top: 6px;
+    color: #fff;
+}
+.level-cur .level-dt a span {
+    display: inline-block;
+    width: 26px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.level-dd-div {
+    width: 83px;
+    height: 36px;
+    line-height: 36px;
+}
+.level-dd-a {
+    display: block;
+    width: 78px;
+    height: 36px;
+    color: #535362;
+    background-color: #fff;
+}
+.level-4 {
+    height: 70px;
+    bottom: 0;
+    z-index: 1003;
+}
+.level-dt s.level-icon6 {
+    background-position: 0 -130px;
+}
+
+
+
+/*==============================bottom================================*/
+.mall-ensure {
+    height: 105px;
+    background-color: #ff5c00;
+    color: #FFF;
+    box-shadow: 0px -4px 12px rgba(207, 207, 207, 0.75);
+    border-bottom: 1px solid #ff5c00;
+}
+.mall-ensure-bd, .mall-desc-bd, .tfc_footer-bd {
+    width: 1240px;
+}
+.mall-ensure-bd, .mall-desc-bd, .tfc_footer-bd, .tfc_icp img {
+    margin: 0 auto;
+}
+.mall-ensure-bd-cen, .mall-desc, .tfc_nav-footer, .tfc_footer {
+    width: 100%;
+}
+.mall-ensure-bd-cen ul li {
+    float: left;
+    font-family: "Microsoft YaHei";
+}
+.mall-ensure-bd-cen dl {
+    width: 285px;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.mall-ensure-bd-cen dt {
+    position: relative;
+}
+.mall-ensure-bd-cen dt i {
+    margin-right: 8px;
+    float: left;
+    color: #fff;
+    position: relative;
+    left: 0;
+    top: 2px;
+}
+.mall-ensure-bd-cen dt h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+.mall-ensure-bd-cen dd {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    margin-right: 35px;
+    _display: inline-block;
+}   
+.mall-desc {
+    background-color: #FFF;
+    padding-top: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 15px;
+}
+.mall-desc-bd-cen {
+    padding-left: 25px;
+}
+.mall-desc-bd dl {
+    float: left;
+    width: 176px;
+}
+.mall-desc-bd dl dt {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    padding-left: 30px;
+}
+
+.mall-desc-bd dl dt i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+}
+.mall-desc-bd dl dd {
+    padding: 4px 0;
+    padding-left: 30px;
+    font-size: 12px;
+}
+.weixin-logo {
+    float: left;
+    width: 110px;
+}
+.weixin-logo .weixin-span {
+    float: left;
+    display: inline-block;
+    margin: 2px 6px 0;
+}
+.weixin-logo span {
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/*==================================吸顶菜单===============================*/
+
+.ui-fixed-top {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ff5c00;
+    background: #fefefe;
+    z-index: 99;
+    height: 45px;
+    opacity:0;
+}
+.ui-fixed-top .ui-fixLogo {
+    background: url(../img/fixLogo.png) no-repeat;
+    display: block;
+    width: 107px;
+    height: 37px;
+    float: left;
+    margin-top: 9px;
+}
+.ui-fixed-top .ui-nav-list {
+    float: left;
+    margin: 5px 0 0 5px;
+}
+.ui-fixed-top .ui-nav-list li {
+    float: left;
+    padding: 0 15px;
+    line-height: 35px;
+}
+.ui-fixed-top .ui-nav-list li a {
+    font-size: 14px;
+    position: relative;
+    display: block;
+    color: #ff5c00;
+    font-weight: bold;
+}
+.ui-fixed-top .ui-search {
+    width: 400px;
+    margin-top: 3px;
+}
+
+
+
+/*=====================================outerbox=====================================*/
+.outerbox{
+    background: url(../img/outerBg.png) top no-repeat;
+}
+
+.focus_banner {
+    height: 350px;
+    overflow: hidden;
+    width: 1090px;
+}
+.slideBox {
+    position: relative;
+    width: 1090px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 350px;
+}
+.imgArea {
+    display: block;
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9999px;
+}
+.imgArea li {
+    float: left;
+    width: 1090px;
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+}
+.btnArea {
+    position: absolute;
+    display: none;
+    bottom: 10px;
+    left: 50%;
+    padding-right: 10px;
+    height: 19px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.btnArea span {
+    float: left;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    left: 0;
+    font-size: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.ui-ad-top{
+    margin: 20px auto;
+}
+.ui-ad-top .ui-ad-content {
+    width: 1120px;
+    overflow: hidden;
+}
+.ui-ad-top .ui-ad-content a {
+    display: block;
+    float: left;
+    width: 350px;
+    height: 150px;
+    margin-right: 17px;
+    border: 1px solid #ccc;
+}
+.ui-ad-top .ui-ad-content a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.site-floor-dt-fl {
+    margin: 20px 0 10px;
+}
+.site-floor-dt-fl .inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+.site-floor-dt-fl .span1 {
+    height: 1px;
+    width: 380px;
+    background: #ccc;
+    vertical-align: 9px;
+}
+.site-floor-dt-fl .titleImg {
+    margin: 0 31px;
+    background: url(http://static.boodoll.cn/mall/v16/images/newIndex/newIndexHeader.png) no-repeat;
+    width: 119px;
+    height: 48px;
+}
+.site-floor-dt-fl .span3 {
+    background-position: 0 -109px;
+}
+.goods {
+    margin-bottom: 20px;
+}
+.site-hot-item {
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.1);
+}
+.site-hot-item-fl {
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+}
+.site-hot-item-fl img {
+    float: left;
+    display: block;
+    width : 590px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+
+
+
+
+
+
+/*======================banner lighthigh=======================*/
+
+.slideBox .btnArea .current {
+    background-color: #f90;
+}

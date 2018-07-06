@@ -1,0 +1,94 @@
+/*===============================================================*/
+.site-hot-item {
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.1);
+}
+.site-hot-item-fl {
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+}
+.site-hot-item-fl img {
+    float: left;
+    display: block;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.site-hot-item-fl img {
+    height: 298px;
+}
+.site-hot-item-fr {
+    float: left;
+    margin: 10px 10px 10px 20px;
+    position: relative;
+    width: 370px;
+}
+.site-hot-row-two {
+    padding-top: 5px;
+    height: 32px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "微软雅黑";
+    color: #666;
+}
+.site-hot-row-two a{
+    color: #666;
+}
+.act-pro .site-hot-row-three {
+    height: 138px;
+}
+.site-hot-row-three {
+    padding-top: 8px;
+    line-height: 24px;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #666;
+    margin-bottom: 6px;
+    height: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.site-hot-row-four {
+    position: relative;
+    margin-top: 10px;
+}
+.promo-price {
+    color: #df2943;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.viewbtn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 200px;
+    background-color: #ff5c00;
+    font-family: "微软雅黑";
+    font-size: 17px;
+    color: #fff;
+    height: 33px;
+    display: block;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    line-height: 21px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/*======================左边广告============================*/
+.fixLeftImg{
+    display: none;
+}
+

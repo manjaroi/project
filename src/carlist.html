@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>母婴之家-【购物车】</title>
+	<link rel="stylesheet" href="../dist/common.css">
+	<link rel="stylesheet" href="./css/login.css">
+	<link rel="stylesheet" href="./css/goodslist.css">
+	<link rel="stylesheet" href="./css/cartlist.css">
+	<link rel="stylesheet" href="./css/readCookie.css">
+	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+	<script src="./js/carlist.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.js"></script>
+	<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="../dist/index"></script>
+</head>
+<body>
+	<div id="site-nav" class="site-nav">
+		<!-- <div id="sn-bd" class="sn-bd">
+			<div class="container clearfix">
+				<ul class="site-menu clearfix fl">
+					<li class="curpage">
+						<a href="###">母婴之家</a>
+					</li>
+					<li>
+						<a href="###">我要开店</a>
+					</li>
+					<li>
+						<a href="###">手机版</a>
+					</li>
+				</ul>
+				<ul class="ssn-menu clearfix fr">
+					<li class="ssn-login">
+						<span>欢迎来到母婴之家!</span>
+						<a href="###" id="loginBtn">[登录]</a>
+						<a href="###" id="regBtn">[免费注册]</a>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-home">
+						<div class="ssn-hover">
+							<a href="###">我的订单</a>
+							<b></b>
+						</div>
+						<div class="ssn-home-down">
+							<a href="###">我的家</a><br>
+							<a href="###">我的提问</a><br>
+							<a href="###">我的评论</a><br>
+							<a href="###">我的收藏</a><br>
+							<a href="###">我的幸运星</a>
+						</div>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-mybrand">
+						<div class="ssn-hover">
+							<a href="###">客户服务</a>
+							<b></b>
+						</div>
+						<div class="ssn-mybrand-down">
+							<a href="###">在线客服</a><br>
+							<a href="###">帮助中心</a>
+						</div>
+					</li>
+					<li class="ssn-myorder">
+						<a href="###">商务合作</a>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-myorder">
+						<a href="###">分类导航</a>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+	</div>
+	<div style="background-color:#fff;border-bottom:1px solid #d3d3d3;box-shadow:5px 9px 42px #e4e4e4;padding-bottom:10px;">
+		<div class="header wrapper container ">
+			<div class="logo">
+				<h1>
+					<a href="index.html">
+						<img src="http://static.boodoll.cn/omall/v15/images/logo29new.png" alt="">
+					</a>
+				</h1>
+			</div>
+			<div class="new_search">
+				<span class="btnSebg">
+					<input type="text" name="txSearchCondition" maxlength="50" id="txSearchCondition">
+					<input type="button" id="btnSearch" value="搜索">
+				</span>
+				<span class="hotSearch" id="J_hotSearch">
+					热门搜索:
+					<a href="javascript:;">爱他美</a>
+					<a href="javascript:;">美德乐</a>
+					<a href="javascript:;">口罩</a>
+					<a href="javascript:;">保温杯</a>
+					<a href="javascript:;">澳洲直邮</a>
+					<a href="javascript:;">睡袋</a>
+					<a href="javascript:;">暖奶器</a>
+					<a href="javascript:;">奶瓶</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="shoppingCar">
+		<div class="container m_container">	
+			<div class="car_details">
+				<ul class="car_details_left"></ul>
+				<!-- <div class="car_details_right">
+					<img src="../images/602.png" alt="" id="m_less"><input type="number" min="1" id="m_number_m"><img src="../images/603.png" alt="" id="m_more">
+					<div class="m_right_m">
+						<span class="m_price_right">5186</span>
+						<span class="m_total_right">5186</span>
+						<span class="m_remove_right">&times;</span>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div id="cart-floatbar" style="background-color: #fff;">
+		<div class="ui-ceilinglamp-1" style="width: 990px;height: 52px;margin: 0 auto;">
+			<div class="cart-toolbar" style="width: 988px;height: 50px;margin: 0 auto;">
+				<div class="toolbar-wrap">
+					<div class="selected-item-list hide"></div>
+					<div class="toolbar-wrap">
+						<div class="options-box">
+							<div class="select-all">
+								<div class="cart-checkbox">
+									<input type="checkbox" class="jdcheckbox">
+								</div>
+								全选
+							</div>
+							<div class="operation">
+								<a href="javascript:;" class="follow-batch">删除选中的商品</a>
+								<a href="javascript:;">移到我的关注</a>
+								<a href="javascript:;">清理购物车</a>
+							</div>
+							<div class="clr"></div>
+							<div class="toolbar-right">
+								<div class="btn-area">
+									<a href="javascript:;" class="submit-btn">去结算</a>
+
+								</div>
+								<div class="price-sum">
+									<div>
+										<span>总价：</span>
+										<span class="price sumPrice">
+											<em>1234</em>
+										</span>
+										<b class="ml5 price-tips"></b>
+										<br>
+									</div>
+
+								</div>
+								<div class="amount-sum">
+									已选择
+									<em></em>
+									件商品
+									<b class="up"></b>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="mall-ensure">
+			<div class="mall-ensure-bd clearfix">
+				<div class="mall-ensure-bd-cen">
+					<ul class="clearfix">
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="javascript:;">
+										<i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
+										<h2>品质</h2>
+									</a>
+								</dt>
+								<dd>全球化采购、正品保障</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="javascript:;">
+										<i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+										<h2>便捷</h2>
+									</a>
+								</dt>
+								<dd>一站式服务、送货上门</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="javascript:;">
+										<i class="fa fa-futbol-o fa-2x" aria-hidden="true"></i>
+										<h2>专业</h2>
+									</a>
+								</dt>
+								<dd>顾客式客服、全年午休</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt class="clearfix">
+									<a href="javascript:;">
+										<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+										<h2>贴心</h2>
+									</a>
+								</dt>
+								<dd>个性化导购、售后无忧</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mall-desc">
+		<div class="mall-desc-bd clearfix">
+			<div class="mall-desc-bd-cen clearfix">
+				<dl class="h-guide">
+					<dt>
+						<i></i>购物指南
+					</dt>
+					<dd><a href="javascript:;">购物流程</a></dd>
+					<dd><a href="javascript:;">常见问题</a></dd>
+					<dd><a href="javascript:;">优惠券(码)</a></dd>
+				</dl>
+				<dl class="h-guide">
+					<dt>
+						<i></i>支付方式
+					</dt>
+					<dd><a href="javascript:;">在线支付</a></dd>
+
+				</dl>
+				<dl class="h-guide">
+					<dt>
+						<i></i>配送方式
+					</dt>
+					<dd><a href="javascript:;">运费及时效</a></dd>
+					<dd><a href="javascript:;">品牌专场配送方式</a></dd>
+				</dl>
+				<dl class="h-guide">
+					<dt>
+						<i></i>售后服务
+					</dt>
+					<dd><a href="javascript:;">退换货原则</a></dd>
+					<dd><a href="javascript:;">退换货流程</a></dd>
+					<dd><a href="javascript:;">退换货周期</a></dd>
+					<dd><a href="javascript:;">品牌专场售后政策</a></dd>
+				</dl>
+				<dl class="h-guide">
+					<dt>
+						<i></i>关于我们
+					</dt>
+					<dd><a href="javascript:;">企业理念</a></dd>
+					<dd><a href="javascript:;">网页合作</a></dd>
+					<dd><a href="javascript:;">人才招聘</a></dd>
+					<dd><a href="javascript:;">关于我们</a></dd>
+				</dl>
+				<dl class="h-guide">
+					<dt>
+						<i></i>联系指南
+					</dt>
+					<dd><a href="javascript:;">新浪微博</a></dd>
+					<dd><a href="javascript:;">练习客服</a></dd>
+					<dd><a href="javascript:;">我要投诉</a></dd>
+				</dl>
+				<div class="weixin-logo">
+					<div class="weixin-logo-img">
+						<img src="http://static.boodoll.cn/mall/v16/images/index/weixin_code.jpg?_=6" alt="">
+					</div>
+					<div>
+						<span class="weixin-span">
+							<img src="http://static.boodoll.cn/mall/v16/images/index/weixin_icon.jpg" alt="">
+						</span>
+						<span>扫一扫加微信</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tfc_footer">
+		<!-- <div class="tfc_footer-bd">
+			<ul class="tfc_nav-footer clearfix">
+				<li><a href="javascript:;">首页</a></li>
+				|
+				<li><a href="javascript:;">公司简介</a></li>
+				|
+				<li><a href="javascript:;">人才招聘</a></li>
+				|
+				<li><a href="javascript:;">合作联系</a></li>
+				|
+				<li><a href="javascript:;">企业理念</a></li>
+				|
+				<li><a href="javascript:;">隐私条款</a></li>
+				|
+			</ul>
+			<div class="tfc_copyright">
+				<span>由本网站发布的商品或服务的商业宣传活动均属“广告”</span><br>
+				<span>Copyright©2003 - 2017 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 4008201000</span><br>
+				<span>出版物经营许可证新出发(沪)零字第E6980号</span>
+			</div>
+			<div style="padding: 10px;text-align: center;">
+				<div>
+					<a href="javascript:;">
+						<img src="http://static.boodoll.cn/mall/v16/images/index/shanghai_industry.gif" alt="" style="width: 100px;height: 47px;">
+					</a>
+					<a href="javascript:;">
+						<img src="http://v.trustutn.org/images/cert/brand_bottom_large.jpg" alt="" style="width: 134px;height: 47px;">
+					</a>
+				</div>
+				<a href="javascript:;">
+					<span style="color: #939393;vertical-align: 5px;margin-right: 5px;font-size: 12px;">沪ICP备09021709号</span>
+				</a>
+				<a href="javascript:;">
+					<img src="http://static.boodoll.cn/mall/v16/images/ghs.png" alt="">
+					<span style="color: #939393;vertical-align: 5px;margin-left: 0px;font-size: 12px;">沪公网安备 31010402000751号</span>
+				</a>
+			</div>
+		</div> -->
+	</div>
+</body>
+</html>

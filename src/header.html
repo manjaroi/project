@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="../dist/index"></script>
+</head>
+<body>
+	<div id="sn-bd" class="sn-bd">
+		<div class="container clearfix">
+			<ul class="site-menu clearfix fl">
+				<li class="curpage">
+					<a href="###">母婴之家</a>
+				</li>
+				<li>
+					<a href="###">我要开店</a>
+				</li>
+				<li>
+					<a href="###">手机版</a>
+				</li>
+			</ul>
+			<ul class="ssn-menu clearfix fr">
+				<li class="ssn-login">
+					<span>欢迎来到母婴之家!</span>
+					<a href="login.html" id="loginBtn">[登录]</a>
+					<a href="register.html" id="regBtn">[免费注册]</a>
+				</li>
+				<li class="ssn-separator"></li>
+				<li class="ssn-home">
+					<div class="ssn-hover">
+						<a href="###">我的订单</a>
+						<b></b>
+					</div>
+					<div class="ssn-home-down">
+						<a href="###">我的家</a><br>
+						<a href="###">我的提问</a><br>
+						<a href="###">我的评论</a><br>
+						<a href="###">我的收藏</a><br>
+						<a href="###">我的幸运星</a>
+					</div>
+				</li>
+				<li class="ssn-separator"></li>
+				<li class="ssn-mybrand">
+					<div class="ssn-hover">
+						<a href="###">客户服务</a>
+						<b></b>
+					</div>
+					<div class="ssn-mybrand-down">
+						<a href="###">在线客服</a><br>
+						<a href="###">帮助中心</a>
+					</div>
+				</li>
+				<li class="ssn-myorder">
+					<a href="###">商务合作</a>
+				</li>
+				<li class="ssn-separator"></li>
+				<li class="ssn-myorder">
+					<a href="###">分类导航</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$('.ssn-home').on('mouseover',function(){
+			$(this).css('border','1px solid rgb(255, 153, 0)');
+			$(this).css('padding','0px 0px');
+			$(this).css('border-bottom','none');
+			$(this).find('.ssn-home-down').show();
+			$(this).find('.ssn-home-down').css('padding','0px 0px');
+			$(this).find('.ssn-home-down').css('border-top','none');
+			$(this).find('.ssn-home-down').css('width','63px');
+		})
+
+		$('.ssn-home').on('mouseout',function(){
+			$(this).find('.ssn-home-down').hide();
+			$(this).css('border','none');
+			$(this).find('.ssn-home-down').css('padding','0px 4px');
+		})
+
+		$('.ssn-mybrand').on('mouseover',function(){
+			$(this).find('.ssn-mybrand-down').show();
+			$(this).css('border','1px solid rgb(255, 153, 0)');
+			$(this).css('padding','0px 0px');
+			$(this).css('border-bottom','none');
+			$(this).find('.ssn-mybrand-down').css('padding','0px 0px');
+			$(this).find('.ssn-mybrand-down').css('width','83px');
+		})
+	
+		$('.ssn-mybrand').on('mouseout',function(){
+			$(this).find('.ssn-mybrand-down').hide();
+			$(this).css('border','none');
+			$(this).find('.ssn-home-down').css('padding','0px 4px');
+		})
+	</script>
+</body>
+</html>

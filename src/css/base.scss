@@ -1,0 +1,250 @@
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+
+
+
+/*2.添加公共样式*/
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+/*清除浮动（不管）*/
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+/*公共类*/
+.container {  /*内容、版心 提取 */
+    width: 1090px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+
+
+body{
+    background: #E9E9E9;
+}
+
+a{
+    color:#666;
+}
+
+
+
+/*================================top=====================================*/
+.site-nav{
+    background: url(http://static.boodoll.cn/mall/v16//images/index/top-navbg.png) repeat-x;
+    height: 42px;
+    z-index: 100;
+    position: relative;
+}
+.site-bd{
+    height: 42px;
+    margin: 0 auto;
+}
+.sn-bd .container{
+    height: 42px;
+    margin: 0 auto;
+}
+.sn-bd .site-menu{
+    padding-top: 5px;
+    height: 37px;
+}
+.sn-bd a{
+    color: #666666;
+}
+.sn-bd .site-menu a{
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sn-bd .site-menu li{
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    border-right: 1px solid #e7e7e7;
+    display: inline-block;
+}
+.sn-bd li.curpage{
+    border:1px solid #ccc;
+    border-bottom: none;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.sn-bd li.curpage a{
+    color: #FF5c00;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sn-bd .ssn-menu{
+    right: 0;
+    top: 0;
+    height: 32px;
+    line-height: 32px;
+    z-index: 110;
+    margin-top: 6px;
+    font-size: 12px;
+}
+.sn-bd .ssn-menu li{
+    display: inline-block;
+    padding: 0 4px;
+    position: relative;
+    float: left;
+}
+.sn-bd .ssn-menu li b{
+    cursor: pointer;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    width: 0;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    border-color: #666666 transparent transparent;
+    position: relative;
+    top: 14px;
+    overflow: hidden;
+    display: inline-block;
+    zoom: 1;
+}
+.ssn-menu li.ssn-separator{
+    padding: 0;
+    width: 0;
+    vertical-align: top;
+    margin: 0 3px 0 1px;
+    top: 9px;
+    line-height: 14px;
+    left: 0;
+    height: 14px;
+    font-size: 0;
+    display: inline-block;
+    border-left: 1px solid #cccccc; 
+}
+.sn-bd .ssn-menu .ssn-login{
+    display: inline-block;
+    padding: 0 4px;
+    position: relative;
+    float: left;
+}
+.ssn-login{
+    color:#666666;
+}
+#loginBtn, #regBtn {
+    color: #FF5c00;
+}
+.sn-bd .ssn-hover{
+    height: 28px;
+    line-height: 32px !important;
+    text-align: center;
+    z-index: 120;
+    position: relative;
+    overflow: hidden;
+}
+.ssn-home {
+    height: 28px;
+    line-height: 32px !important;
+    text-align: center;
+    z-index: 120;
+    position: relative;
+    overflow: hidden;
+}
+.sn-bd .ssn-hover  a {
+    line-height: 32px !important;
+}
+.sn-bd .ssn-home-down{
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #FF9900;
+    text-align: left;
+    padding: 4px 0px 2px;
+    width: 68px;
+    top: 28px;
+    left: 0px;
+    line-height: 21px;
+    display: none;
+    z-index: 20;
+}
+.sn-bd .ssn-mybrand-down{
+    background-color: #ffffff;
+    position: absolute;
+     border: 1px solid #FF9900; 
+    text-align: left;
+    padding: 4px 0px 2px;
+    width: 68px;
+    top: 28px;
+    left: 0px;
+    line-height: 21px;
+    display: none;
+    z-index: 20;
+}
+.sn-bd .ssn-hover a{
+    float: left;
+    margin-left:0;
+}
+.sn-bd .ssn-hover b{
+    float: left;
+}
+
+
+
+/*===========================================copyright============================*/
+.tfc_footer {
+    background-color: #ebebeb;
+}
+.tfc_footer-bd {
+    padding-top: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.tfc_nav-footer, .tfc_nav-footer li a, .tfc_copyright {
+    color: #999;
+}
+.tfc_nav-footer li {
+    display: inline;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.tfc_copyright{
+    color: #999;
+    font-size: 12px;
+}
+.tfc_copyright span {
+    margin: 0 5px;
+    display: inline;
+    font-family: "Microsoft YaHei";
+}

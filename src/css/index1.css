@@ -1,0 +1,98 @@
+.ui-silder-all {
+    position: relative;
+    font-weight: bold;
+    display: block;
+    height: 34px;
+    width: 140px;
+    text-indent: 17px;
+    font-size: 14px;
+    color: #ff5c00;
+    line-height: 35px;
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+.ui-silder-all i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: url(../img/daohang.png) no-repeat;
+    background-position: -110px -65px;
+    width: 9px;
+    height: 6px;
+}
+.ui-category {
+    display: none;
+    background: #fff;
+    width: 140px;
+    position: absolute;
+    top: 35px;
+}
+.ui-category ul {
+    box-shadow: 2px 2px 2px #ccc;
+}
+.ui-category .ui-category-list {
+    height: 39px;
+    text-align: center;
+}
+.ui-category .ui-category-second {
+    position: relative;
+    display: block;
+    text-align: left;
+    text-indent: 40px;
+    height: 37px;
+    border: 1px solid #fff;
+    line-height: 37px;
+    background-color: #fff;
+    width: 139px;
+}
+.ui-category .ui-cate-icon {
+    vertical-align: middle;
+    background: url(../img/daohang.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+}
+.ui-category .ui-cate-arr {
+    display: inline-block;
+    background: url(../img/daohang.png) no-repeat;
+    background-position: -117px -84px;
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.ui-silder-nav:hover .ui-category{
+    display: block;
+    border: 1px solid #ff5c00;
+    border-right: 1px solid #fff;
+}
+.ui-category-list:hover .ui-category-second{
+    border-right: 1px solid #fff;
+}
+.ui-category-list:hover .ui-category-third{
+    display: block;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box {
+    padding: 9px 30px;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl {
+    text-align: left;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dt {
+    padding: 3px 0 3px 0;
+    border-bottom: 1px dotted #e4e4e4;
+    font-weight: bold;
+    color: #484848;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dd {
+    padding: 5px 0;
+    color: #DADADA;
+    line-height: 20px;
+    word-break: break-word;
+}
+.ui-category-list .ui-cate-left .ui-cate-left-box dl dd a {
+    margin: 0 5px 0 0;
+    color: #888;
+    white-space: nowrap;
+}

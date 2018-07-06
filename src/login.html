@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>母婴之家-【登录】</title>
+	<link rel="stylesheet" href="../dist/common.css">
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="../dist/index"></script>
+	<script src="./js/login.js"></script>
+	<script src="./js/login1.js"></script>
+</head>
+<body>
+	<div id="site-nav" class="site-nav">
+		<!-- <div id="sn-bd" class="sn-bd">
+			<div class="container clearfix">
+				<ul class="site-menu clearfix fl">
+					<li class="curpage">
+						<a href="###">母婴之家</a>
+					</li>
+					<li>
+						<a href="###">我要开店</a>
+					</li>
+					<li>
+						<a href="###">手机版</a>
+					</li>
+				</ul>
+				<ul class="ssn-menu clearfix fr">
+					<li class="ssn-login">
+						<span>欢迎来到母婴之家!</span>
+						<a href="###" id="loginBtn">[登录]</a>
+						<a href="###" id="regBtn">[免费注册]</a>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-home">
+						<div class="ssn-hover">
+							<a href="###">我的订单</a>
+							<b></b>
+						</div>
+						<div class="ssn-home-down">
+							<a href="###">我的家</a><br>
+							<a href="###">我的提问</a><br>
+							<a href="###">我的评论</a><br>
+							<a href="###">我的收藏</a><br>
+							<a href="###">我的幸运星</a>
+						</div>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-mybrand">
+						<div class="ssn-hover">
+							<a href="###">客户服务</a>
+							<b></b>
+						</div>
+						<div class="ssn-mybrand-down">
+							<a href="###">在线客服</a><br>
+							<a href="###">帮助中心</a>
+						</div>
+					</li>
+					<li class="ssn-myorder">
+						<a href="###">商务合作</a>
+					</li>
+					<li class="ssn-separator"></li>
+					<li class="ssn-myorder">
+						<a href="###">分类导航</a>
+					</li>
+				</ul>
+			</div>
+		</div> -->
+	</div>
+	<div style="background-color:#fff;border-bottom:1px solid #d3d3d3;box-shadow:5px 9px 42px #e4e4e4;padding-bottom:10px;">
+		<div class="header wrapper container ">
+			<div class="logo">
+				<h1>
+					<a href="javascript:;">
+						<img src="http://static.boodoll.cn/omall/v15/images/logo29new.png" alt="">
+					</a>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div style="padding-top:55px;">
+		<div class="wrapper">
+			<div class="sign-content">
+				<div class="sign-nav login-nav">
+					<ul>
+						<li>
+							<a href="register.html" id="regist_href">
+								<i></i>
+								注册
+							</a>
+						</li>
+						<li class="selected">
+							<a href="javascript:;">
+								<i></i>登录
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sign-left login-right">
+					<form action="" method="post" name="login-form" id="login-form">
+						<ul class="register-form login-form clearfix">
+							<li>
+								<label for="email" class="label">账户名:</label>
+								<div class="inputCont">
+									<input type="text" id="login-email" name="login-email" class="g-ipt" placeholder="请填入邮箱或手机号" maxlength="100" autocomplete="off" >
+									<div id="login-emailTip" class="onError" style="background: transparent; display: none;">
+										<p class="noticeWrap noticeWrap-err">
+											<b class="ico-warning"></b>
+											<span class="txt-err">账户格式不正确！</span>
+										</p>
+									</div>
+								</div>
+								<i class="email-icon login-icon"></i>
+							</li>
+							<li>
+								<label for="label" for="email" class="label">密码</label>
+								<div class="inputCont">
+									<input type="password" id="password" name="password" class="g-ipt-err" placeholder="请填入密码">
+									<div id="passwordTip" class="stickTips" style="background: transparent; display: none;"></div>
+									<i class="password-icon login-icon"></i>
+								</div>
+							</li>
+							<li>
+								<label class="label"></label>
+								<div id="embed-captcha" class="inputCont">
+									<div class="geetest_holder geetest_wind geetest_wait_compute" style="width: 275px;">
+										<div class="geetest_btn">
+											<div class="geetest_radar_btn">
+												<div class="geetest_radar">
+													<div class="geetest_ring">
+														<div class="geetest_small"></div>
+													</div>
+													<div class="geetest_sector">
+														<div class="geetest_small"></div>
+													</div>
+													<div class="geetest_cross">
+														<div class="geetest_v"></div>
+													</div>
+													<div class="geetest_dot"></div>
+													<div class="geetest_scan">
+														<div class="geetest_h"></div>
+													</div>
+													<div class="geetest_status">
+														<div class="geetest_bg"></div>
+														<div class="geetest_hook"></div>
+													</div>
+												</div>
+												<div class="geetest_radar_tip" tabindex="0" aria-label="点击进行验证" style="outline-width: 0px;">
+													<span class="geetest_radar_tip_content">点击按钮进行验证</span>
+													<span class="geetest_reset_tip_content">请点击重试</span>
+													<span class="geetest_radar_error_code"></span>
+												</div>
+												<a href="javascript:;" class="geetest_logo"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li style="min-height: 20px">
+								<label for="" class="label">
+									&nbsp;
+								</label>
+								<div class="inputCont">
+									<div class="argWrap">
+										<label for="">
+											<input type="checkbox" id="remember" class="checkbox" name="remember" style="margin-top: 5px;">记住我(30天内免登录)
+										</label>
+										<a href="javascript:;" class="forgetpassword">忘记密码？</a>
+									</div>
+								</div>
+							</li>
+							<li class="submit-area">
+								<label for="" class="label">&nbsp;</label>
+								<div class="inputCont">
+									<div class="argWrap">
+										<input type="button" id="login-btn" name="login-btn" class="submit-signin" value="立即登录" style="color: #fff;text-align: center;font-weight: bold;font-size: 14px;">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</form>
+					<div class="otherwise">
+						<div class="sign-title-right">使用合作网站账号登录母婴之家：
+							<ul class="sign-right-list">
+								<li class="othercount">
+									<a href="javascript:;" class="weibo" id="J_weibo" title="微博账号登录"></a>
+								</li>
+								<li class="othercount">
+									<a href="javascript:;" class="alipay" id="J_alipay" title="支付宝账号登录"></a>
+								</li>
+								<li class="othercount">
+									<a href="javascript:;" class="qq" id="J_qq" title=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sign-right login-left">
+					<a href="javascript:;">
+						<img src=" http://img.muyingzhijia.com/product/web/toutu/150211-340x300-2.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tfc_footer">
+		<!-- <div class="tfc_footer-bd">
+			<ul class="tfc_nav-footer clearfix">
+				<li><a href="javascript:;">首页</a></li>
+				|
+				<li><a href="javascript:;">公司简介</a></li>
+				|
+				<li><a href="javascript:;">人才招聘</a></li>
+				|
+				<li><a href="javascript:;">合作联系</a></li>
+				|
+				<li><a href="javascript:;">企业理念</a></li>
+				|
+				<li><a href="javascript:;">隐私条款</a></li>
+				|
+			</ul>
+			<div class="tfc_copyright">
+				<span>由本网站发布的商品或服务的商业宣传活动均属“广告”</span><br>
+				<span>Copyright©2003 - 2017 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 4008201000</span><br>
+				<span>出版物经营许可证新出发(沪)零字第E6980号</span>
+			</div>
+			<div style="padding: 10px;text-align: center;">
+				<div>
+					<a href="javascript:;">
+						<img src="http://static.boodoll.cn/mall/v16/images/index/shanghai_industry.gif" alt="" style="width: 100px;height: 47px;">
+					</a>
+					<a href="javascript:;">
+						<img src="http://v.trustutn.org/images/cert/brand_bottom_large.jpg" alt="" style="width: 134px;height: 47px;">
+					</a>
+				</div>
+				<a href="javascript:;">
+					<span style="color: #939393;vertical-align: 5px;margin-right: 5px;font-size: 12px;">沪ICP备09021709号</span>
+				</a>
+				<a href="javascript:;">
+					<img src="http://static.boodoll.cn/mall/v16/images/ghs.png" alt="">
+					<span style="color: #939393;vertical-align: 5px;margin-left: 0px;font-size: 12px;">沪公网安备 31010402000751号</span>
+				</a>
+			</div>
+		</div> -->
+	</div>
+</body>
+</html>
