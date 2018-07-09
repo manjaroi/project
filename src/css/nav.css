@@ -1,9 +1,10 @@
-.ui-silder-nav:hover .ui-category{
+.ui-nav .ui-silder-nav:hover .ui-category{
     display:block;
+    border: 1px solid #fff;
 }
 .ui-category-second:hover .ui-category-third{
     display:block;
 }
 .ui-category-second:hover{
-    border-right:1px solid #fff;
+    /*border-right:1px solid #fff;*/
 }

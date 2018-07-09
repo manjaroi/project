@@ -40,11 +40,14 @@ require(['jquery','http'],function($,http){
 				
 				var r = window.eval(' ('+  res +') ');
 				
-				$(location).prop('href', 'index.html')
+				
 
 				$.each(r,function(n,i){	
 					if (r.message == '用户名已注册') {
-						alert('用户名已注册');	
+						alert('用户名已注册');
+						$(location).prop('href', 'register.html')	
+					}else{
+						$(location).prop('href', 'index.html')
 					}
 				})
 			});

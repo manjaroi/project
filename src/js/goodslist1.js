@@ -78,16 +78,18 @@ document.addEventListener('DOMContentLoaded',function(){
 	}
 
 
-	// ======================= 右边固定==============================
+	let sildebar = document.querySelector('.sildebar');
+    let level_dl = document.querySelectorAll('.level-dl');
     let level_dt = document.querySelectorAll('.level-dt');
     let user_img1 = document.querySelectorAll('.level-dd')[0];
     let user_img2 = document.querySelectorAll('.level-dd')[2];
     let user_img3 = document.querySelectorAll('.level-dd')[1];
     let user_img4 = document.querySelectorAll('.level-dd')[3];
     let user_img5 = document.querySelectorAll('.level-dd')[4];
+    let car = document.querySelector('.cart-slidebar');
     for(var i = 0;i < level_dt.length;i ++){
         (function(i){
-            level_dt[i].onmouseover = function(){
+            level_dl[i].onmouseover = function(){
                 level_dt[i].style.backgroundColor = '#ff5c00';
                 if (i == 0) {
                    user_img1.style.display = 'block'; 
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded',function(){
                     animate(user_img5,{right:30});
                 }
             }
-            level_dt[i].onmouseout = function(){
+            level_dl[i].onmouseout = function(){
                 level_dt[i].style.backgroundColor = '';
                 user_img1.style.display = 'none';
                 user_img1.style.right = '50px';
@@ -124,7 +126,37 @@ document.addEventListener('DOMContentLoaded',function(){
                 user_img5.style.right = '50px';
             }
         })(i)
+
+
     }
+
+
+    // ==========================读取localstorage数据===========================
+    // function read(){
+	   //  let data = window.localStorage.getItem('key');
+	   //  data = JSON.parse(data);
+	   //  console.log(data);
+	   //  let list = document.querySelector('.slideBarCart-box');
+	   //  console.log(list)
+	   //  let maylike = document.querySelector('.mayLike');
+	   //  if (data !== '') {
+	   //      list.innerHTML = data.map(function(item,i){
+	   //          maylike.innerHTML = '';
+	   //          return '<div class="cart-level-c brand_scroll" style=" overflow-y: auto;">'+
+	   //                  '<div id="cart-level-plist">'+
+	   //                  '<div class="cart-level-plist">'+
+	   //                  '<div class="cart-level-img"><a href="javascript:;"><img src="'+ item.img +'" width="46";height="46"></a></div>'+
+	   //                  '<div class="cart-level-intro"><a href="javascript:;">'+ item.title +'</a><div class="cart-level-act"><strong class="cart-level-price">￥'+ item.price +'</strong><em class="cart-level-num">x1</em><a href="javascript:;" class="cart-level-del">删除</a></div></div>'+
+	   //                  '</div>'+
+	   //                 	'</div>'+
+	   //                  '</div>'+
+	   //                  '<div class="cart-level-all">'+
+	   //                  '<div class="cart-level-fl">共计￥<span class="mcart-p-price"><strong class="class="f20""></strong></span></div><a href="carlist.html" class="cart-level-fr">去购物车结算</a>'+
+	   //                  '</div>'
+	   //      })
+	   //  }
+    // }
+    // read();
 
 
 
@@ -178,18 +210,20 @@ document.addEventListener('DOMContentLoaded',function(){
 		shoppingCarDown.style.display = 'none';
 	}
 
-	// if (data1 !== []) {
-	// 	shoppingCarDown.innerText = '';
-	// 	var res = data1.map(function(item,idx){
-	// 		return `<img src="${item.img}">`
-	// 	})
-	// 	shoppingCarDown.innerHTML = res;
-	// }
-
-	// var price = document.querySelectorAll('.m_price');
-	// console.log(price);
 
 
+	var sidebar = document.querySelector('#gototop');
+    sidebar.onclick = function(){
+        var timer = setInterval(function(){
+            let scrollY = window.scrollY;
+            let speed = Math.ceil((scrollY-0)/10)
+            scrollBy(0,-speed);
+            if (window.scrollY<=0 || speed<0) {
+                clearInterval(timer);
+                scrollBy(0,0);
+            }
+        },20)
 
-
+    }
+	
 })

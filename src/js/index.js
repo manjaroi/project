@@ -34,7 +34,6 @@ define(['jquery','http'],function($,http){
 			}
 			$('.hotfloor').append(res);
 
-
 		})
 
 		// 轮播图
@@ -55,7 +54,6 @@ define(['jquery','http'],function($,http){
 		$(".swiper-wrapper").on("mouseleave", function () {
 			mySwiper.autoplay.start();
 		})
-
 
 		
 
